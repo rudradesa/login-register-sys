@@ -1,0 +1,36 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #1e1e1e;
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      max-width: 500px;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .message a {
+      color: #00d8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .success { color: #00ff7f; }
+    .error { color: #ff4c4c; }
+    .info { color: #00ff7f; }
+ 

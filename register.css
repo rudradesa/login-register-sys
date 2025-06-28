@@ -1,0 +1,168 @@
+
+        /* All CSS copied from login page and adjusted for register form */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #323641;
+            color: #00cc66;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background-color: #323641;
+        }
+        .left-pane, .right-pane {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 50px;
+        }
+        .left-pane {
+            background: #323641;
+            color: white;
+            border-right: 4px solid #00cc66;
+            margin-top: 60px;
+            margin-bottom: 60px;
+              overflow-x: auto;
+  white-space: nowrap;
+        }
+        .right-pane {
+            background-color: #323641;
+            color: #00cc66;
+            text-align: center;
+            justify-content: center;
+            padding: 60px 40px;
+        }
+        .right-pane h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            user-select: none;
+            padding-top: 110px;
+        }
+        .right-pane h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            user-select: none;
+        }
+        .right-pane p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            max-width: 420px;
+            margin: 0 auto;
+            user-select: none;
+            text-decoration: underline;
+        }
+        form {
+            width: 100%;
+        }
+        form h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #00cc66;
+            text-align: center;
+            user-select: none;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #ccd6d9;
+            user-select: none;
+        }
+        input, select {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 1rem;
+            border-radius: 12px;
+            border: none;
+            outline: none;
+            color: #2a2d36;
+            background-color: #e0f7e7;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, select:focus {
+            border: 2px solid #00cc66;
+            background-color: #dcfbe6;
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, #00cc66, #00a552);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 204, 102, 0.3);
+            transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #008a4a, #007237);
+            box-shadow: 0 12px 28px rgba(0, 128, 42, 0.5);
+            transform: translateY(-3px);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #00cc66;
+            font-weight: 600;
+            font-size: 35px;
+            margin-bottom: 100px;
+            padding-top: 588px;
+            transition: all 0.3s ease;
+        }
+        .links {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #8ecb8e;
+        }
+        .links a {
+            color: #00cc66;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+        .links a:hover {
+            color: #008a4a;
+            text-decoration: underline;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                border-radius: 0;
+                box-shadow: none;
+                height: auto;
+                min-height: 100vh;
+            }
+            .left-pane, .right-pane {
+                flex: none;
+                width: 100%;
+                padding: 40px 30px;
+            }
+            .right-pane h1 {
+                font-size: 2.75rem;
+            }
+            .right-pane h2 {
+                font-size: 1.5rem;
+            }
+            form h2 {
+                font-size: 1.75rem;
+                margin-bottom: 30px;
+            }
+        }
